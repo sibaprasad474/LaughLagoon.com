@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #bulb{
+            height: 10rem;
+            width: 10rem;
+            border-radius: 50%;
+            /* border: 1px solid black; */
+            margin: auto;
+        }
+        .bulb-container{
+            background-color: yellow;
+        }
+        .bulb-red{
+            background-color: red;
+        }
+        .bulb-blue{
+            background-color: blue;
+        }
+        .bulb-green{
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <!-- <button id="btn1" onclick='alert("message1")'>click 1</button>
+    <button id="btn2" onclick='alert("message2")'>click 2</button>
+    <button id="btn3" onclick='alert("message3")'>click 3</button> -->
+    <!-- <h1>Bookmarks</h1>
+
+    <a href="https://google.com"><button id="google">Google</button></a>
+    <a href="https:/twitter.com"><button id="twitter">twitter</button></a>
+    <a href="https://facebook.com"><button id="facebook">facebook</button></a> -->
+
+    <div id="bulb" class="bulb-container bulb-red">
+
+    </div>
+</body>
+</html>
+<script>
+    // let btn=document.getElementById("btn");
+    // let x=()=>{alert("hello");}
+    // let el=prompt("enter your fav number");
+    // btn.addEventListener("click",x);
+    // if(el==2){
+    //     btn.removeEventListener("click",x);
+    // }
+    // let btn1=document.getElementById("btn1");
+    // let btn2=document.getElementById("btn2");
+    // let btn3=document.getElementById("btn3");
+    // let e1=()=>{
+    //     alert("event1 happend");
+    // }
+    // let e2=()=>{
+    //     alert("event2 happend");
+    // }
+    // let e3=()=>{
+    //     alert("event3 happend");
+    // }
+    // btn1.addEventListener("click",e1);
+    // btn2.addEventListener("click",e2);
+    // btn3.addEventListener("click",e3);
+
+    // let s1=document.getElementById("google");
+    // let s2=document.getElementById("twitter");
+    // let s3=document.getElementById("facebook");
+    // let redirect1=()=>{
+    //     let url="https://google.com";
+    //     window.location=url;
+    // }
+    // s1.addEventListener("click",redirect1);
+
+    // setInterval(async() => {
+    //     let url="https://jsonplaceholder.typicode.com/todos/1";
+    //     console.log(await fetch(url));
+    // }, 4000);
+    let bulb=document.getElementById("bulb");
+    setInterval(async() => {
+        bulb.classList.toggle("bulb-red")
+    }, 500);
+</script>
